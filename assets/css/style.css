@@ -69,31 +69,10 @@ a:hover {
  * ================================================================================================================== */
 #content-thatsMe {
   min-height: 100vh;
-  background: #00bcd4;
-  color: #1f1f1f; }
-
-#content-thatsMe:before {
-  content: "";
-  display: block;
-  position: relative;
-  top: -54px;
-  height: 65px;
-  background-color: #00bcd4;
-  -webkit-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
-  -moz-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, calc(50% - 50px) 0, 50% 80%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%); }
-
-/* ==================================================================================================================
- *
- * Ritzga.dog - projects
- *
- * ================================================================================================================== */
-#content-projects {
-  min-height: 100vh;
   background: #37474f;
   color: #e3e3e3; }
 
-#content-projects:before {
+#content-thatsMe:before {
   content: "";
   display: block;
   position: relative;
@@ -106,15 +85,57 @@ a:hover {
 
 /* ==================================================================================================================
  *
+ * Ritzga.dog - projects
+ *
+ * ================================================================================================================== */
+#content-projects {
+  min-height: 100vh;
+  background: #00bcd4;
+  color: #1f1f1f; }
+
+#content-projects:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -54px;
+  height: 65px;
+  background-color: #00bcd4;
+  -webkit-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(50% - 50px) 0, 50% 80%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%); }
+
+/* ==================================================================================================================
+ *
  * Ritzga.dog - moreProjects
  *
  * ================================================================================================================== */
 #content-moreProjects {
   min-height: 100vh;
+  background: #37474f;
+  color: #e3e3e3; }
+
+#content-moreProjects:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -54px;
+  height: 65px;
+  background-color: #37474f;
+  -webkit-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(50% - 50px) 0, 50% 80%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%); }
+
+/* ==================================================================================================================
+ *
+ * Ritzga.dog - content-wallpaper
+ *
+ * ================================================================================================================== */
+#content-wallpaper {
+  min-height: 100vh;
   background: #00bcd4;
   color: #1f1f1f; }
 
-#content-moreProjects:before {
+#content-wallpaper:before {
   content: "";
   display: block;
   position: relative;
@@ -132,7 +153,7 @@ a:hover {
  * ================================================================================================================== */
 #content-footer {
   min-height: 33vh;
-  background: #37474f;
+  background: #343A40;
   color: #e3e3e3; }
 
 #content-footer:before {
@@ -141,7 +162,7 @@ a:hover {
   position: relative;
   top: -54px;
   height: 65px;
-  background-color: #37474f;
+  background-color: #343A40;
   -webkit-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
   -moz-clip-path: polygon(0 0, calc(50% - 50px) 0, 80% 50%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, calc(50% - 50px) 0, 50% 80%, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%); }
