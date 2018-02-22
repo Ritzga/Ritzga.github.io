@@ -34,8 +34,17 @@
   .margin-top-half {
     margin-top: 20vh; } }
 
+.margin-bot-half {
+  margin-bottom: 13vh; }
+  @media (min-height: 751px) {
+    .margin-bot-half {
+      margin-bottom: 0; } }
+
 .to-top {
-  margin-top: -25px; }
+  margin-top: -60px; }
+  @media (min-height: 751px) {
+    .to-top {
+      margin-top: -25px; } }
 
 /* ==================================================================================================================
  *
@@ -151,6 +160,9 @@ a:hover {
   min-height: 100vh;
   background: #00bcd4;
   color: #1f1f1f; }
+  #content-wallpaper a {
+    color: #102027;
+    font-weight: 600; }
 
 #content-wallpaper:before {
   content: "";
@@ -174,14 +186,14 @@ a:hover {
   color: #e3e3e3; }
   @media (min-height: 699px) {
     #content-footer {
-      min-height: 30vh; } }
+      min-height: 33vh; } }
   #content-footer hr {
     background-color: #e3e3e3;
     color: #e3e3e3;
     border: #e3e3e3;
     height: 1px; }
   #content-footer .to-top {
-    margin-top: -80px; }
+    margin-top: -65px; }
 
 #content-footer:before {
   content: "";
