@@ -14,11 +14,28 @@
  * Ritzga.dog - classes
  *
  * ================================================================================================================== */
-.margin-top-half {
-  margin-top: 20vh; }
+@media (min-height: 600px) {
+  .margin-top-small {
+    margin-top: 6vh; } }
+@media (min-height: 859px) {
+  .margin-top-small {
+    margin-top: 12vh; } }
+@media (min-height: 900px) {
+  .margin-top-small {
+    margin-top: 14vh; } }
+
+@media (min-height: 600px) {
+  .margin-top-half {
+    margin-top: 12vh; } }
+@media (min-height: 859px) {
+  .margin-top-half {
+    margin-top: 18vh; } }
+@media (min-height: 900px) {
+  .margin-top-half {
+    margin-top: 20vh; } }
 
 .to-top {
-  margin-top: -60px; }
+  margin-top: -25px; }
 
 /* ==================================================================================================================
  *
@@ -58,7 +75,7 @@ a:hover {
  *
  * ================================================================================================================== */
 #content-presentation {
-  height: 100vh;
+  min-height: 100vh;
   color: #e3e3e3;
   background: transparent; }
 
@@ -152,9 +169,19 @@ a:hover {
  *
  * ================================================================================================================== */
 #content-footer {
-  min-height: 33vh;
+  min-height: 25vw;
   background: #343A40;
   color: #e3e3e3; }
+  @media (min-height: 699px) {
+    #content-footer {
+      min-height: 30vh; } }
+  #content-footer hr {
+    background-color: #e3e3e3;
+    color: #e3e3e3;
+    border: #e3e3e3;
+    height: 1px; }
+  #content-footer .to-top {
+    margin-top: -80px; }
 
 #content-footer:before {
   content: "";

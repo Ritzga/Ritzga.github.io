@@ -25,7 +25,7 @@ a:hover
  *
  * ================================================================================================================== */
 #content-presentation
-  height: 100vh
+  min-height: 100vh
   color: $secondary-text
   background: transparent
 /* ==================================================================================================================
@@ -110,9 +110,18 @@ a:hover
  *
  * ================================================================================================================== */
 #content-footer
-  min-height: 33vh
+  min-height: 25vw
   background: $bootstrap-dark
   color: $secondary-text
+  @media (min-height: 699px)
+    min-height: 30vh
+  hr
+    background-color: $secondary-text
+    color: $secondary-text
+    border: $secondary-text
+    height: 1px
+  .to-top
+    margin-top: -80px
 #content-footer:before
   content: ""
   display: block
