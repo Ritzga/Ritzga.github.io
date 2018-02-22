@@ -118,6 +118,9 @@ a:hover {
   min-height: 100vh;
   background: #00bcd4;
   color: #1f1f1f; }
+  #content-projects a {
+    color: #102027;
+    font-weight: 600; }
 
 #content-projects:before {
   content: "";
