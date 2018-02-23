@@ -32,6 +32,8 @@ a:hover
     img
       height: 50vh
       width: 100%
+      @media (max-width: 437px)
+        height: 25vh
 /* ==================================================================================================================
  *
  * Ritzga.dog - thatsMe
@@ -120,11 +122,13 @@ a:hover
  *
  * ================================================================================================================== */
 #content-footer
-  min-height: 25vw
+  min-height: 300px
   background: $bootstrap-dark
   color: $secondary-text
-  @media (min-height: 699px)
-    min-height: 33vh
+  @media (max-width: 559px)
+    min-height: 460px
+    text-align: center
+
   hr
     background-color: $secondary-text
     color: $secondary-text

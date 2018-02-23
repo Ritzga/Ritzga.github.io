@@ -38,7 +38,7 @@
   margin-bottom: 13vh; }
   @media (min-height: 751px) {
     .margin-bot-half {
-      margin-bottom: 0; } }
+      margin-bottom: 10vh; } }
 
 .to-top {
   margin-top: -60px; }
@@ -90,6 +90,9 @@ a:hover {
   #content-presentation .rslides img {
     height: 50vh;
     width: 100%; }
+    @media (max-width: 437px) {
+      #content-presentation .rslides img {
+        height: 25vh; } }
 
 /* ==================================================================================================================
  *
@@ -187,12 +190,13 @@ a:hover {
  *
  * ================================================================================================================== */
 #content-footer {
-  min-height: 25vw;
+  min-height: 300px;
   background: #343A40;
   color: #e3e3e3; }
-  @media (min-height: 699px) {
+  @media (max-width: 559px) {
     #content-footer {
-      min-height: 33vh; } }
+      min-height: 460px;
+      text-align: center; } }
   #content-footer hr {
     background-color: #e3e3e3;
     color: #e3e3e3;
