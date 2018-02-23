@@ -87,6 +87,9 @@ a:hover {
   min-height: 100vh;
   color: #e3e3e3;
   background: transparent; }
+  #content-presentation .rslides img {
+    height: 50vh;
+    width: 100%; }
 
 /* ==================================================================================================================
  *

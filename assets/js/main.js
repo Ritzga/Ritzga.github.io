@@ -14,4 +14,10 @@ $( document ).ready(function() {
             return window.history.pushState(null, null, this.href);
         }
     });
+    // Slideshow
+    $("#slider").responsiveSlides({
+        auto: true,
+        random: false,
+        speed: 500
+    });
 });
