@@ -14,6 +14,14 @@
  * Ritzga.dog - classes
  *
  * ================================================================================================================== */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto; }
+
 @media (min-height: 600px) {
   .margin-top-small {
     margin-top: 6vh; } }
@@ -190,12 +198,12 @@ a:hover {
  *
  * ================================================================================================================== */
 #content-footer {
-  min-height: 300px;
+  min-height: 330px;
   background: #343A40;
   color: #e3e3e3; }
   @media (max-width: 559px) {
     #content-footer {
-      min-height: 460px;
+      min-height: 520px;
       text-align: center; } }
   #content-footer hr {
     background-color: #e3e3e3;
