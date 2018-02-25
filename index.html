@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Ritzga's Projects</title>
+        <title data-i18n="header-title">Ritzga's Projects</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Landing page for Projects of Ritzga">
+        <meta name="description" data-i18n="header-description" content="Landing page for Projects of Ritzga">
         <meta name="author" content="Ritzga">
 
         <meta property="og:title" content="Ritzga's Projects" />
@@ -18,6 +18,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- plugins -->
+            <!-- private policy -->
+            <script src="assets/js/library/cookieconsent.min.js"></script>
             <!-- multiply language -->
             <script src="assets/js/library/jquery.i18n.js"></script>
             <script src="assets/js/library/jquery.i18n.messagestore.js"></script>
@@ -40,6 +42,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
         <link rel="stylesheet" href="assets/css/responsiveslides.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!-- google imports -->
@@ -62,37 +65,37 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link jump" href="#content-home">Home</a>
+                            <a class="nav-link jump" href="#content-home" data-i18n="section-nav-home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link jump" href="#content-thatsMe">About Me</a>
+                            <a class="nav-link jump" href="#content-thatsMe" data-i18n="section-nav-about">About Me</a>
                         </li>
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle jump" href="" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle jump" href="" id="navbardrop" data-toggle="dropdown" data-i18n="section-nav-project">
                                 Projects
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item jump" href="#content-projects">Games</a>
-                                <a class="dropdown-item jump" href="#content-moreProjects">Put</a>
-                                <a class="dropdown-item jump" href="#content-moreProjects">Animations</a>
-                                <a class="dropdown-item jump" href="#content-wallpaper">Wallpaper</a>
+                                <a class="dropdown-item jump" href="#content-projects" data-i18n="section-nav-project-game">Games</a>
+                                <a class="dropdown-item jump" href="#content-moreProjects" data-i18n="section-nav-nav-project-put">Put</a>
+                                <a class="dropdown-item jump" href="#content-moreProjects" data-i18n="section-nav-nav-project-animations">Animations</a>
+                                <a class="dropdown-item jump" href="#content-wallpaper" data-i18n="section-nav-nav-project-wallpaper">Wallpaper</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link jump" href="#content-footer">Imprint</a>
+                            <a class="nav-link jump" href="#content-footer" data-i18n="section-nav-imprint">Imprint</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto">
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle jump" href="" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle jump" href="" data-toggle="dropdown" data-i18n="section-nav-language">
                                 <i class="fas fa-flag"></i> language
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item jump" href="#">English</a>
-                                <a class="dropdown-item jump" href="#">German</a>
-                                <a class="dropdown-item jump" href="#">French</a>
+                                <a class="dropdown-item jump" href="#" data-i18n="section-nav-language-en">English</a>
+                                <a class="dropdown-item jump" href="#" data-i18n="section-nav-language-de">German</a>
+                                <a class="dropdown-item jump" href="#" data-i18n="section-nav-language-fr">French</a>
                             </div>
                         </li>
                     </ul>
@@ -105,13 +108,13 @@
         <section id="content-presentation" data-src="assets/img/background-big.jpg" data-pos-x="left" data-parallax>
             <section class="container">
                 <div class="row justify-content-center">
-                    <h1 class="margin-top-half text-center">Welcome to my website!</h1>
+                    <h1 class="margin-top-half text-center " data-i18n="section-welcome-title">Welcome to my website!</h1>
                     <div class="container row">
                         <div class="col-lg-4 d-none d-lg-block">
                             <img src="assets/img/logo.png">
                         </div>
                         <div class="col-lg-8 text-center">
-                            <p data-i18n="section-welcome-title">
+                            <p data-i18n="section-welcome-text">
                                 It's nice that you found me and have a good time here. I'm a hobby-devoloper, who do a
                                 lot of things like websites, desktop apps, 3D animations, image editing and video engineering.
                                 On this homepage you will find some of my projects.
@@ -135,20 +138,20 @@
             <div class="container text-center to-top">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h1>That's me :3</h1>
-                        <p>
+                        <h1 data-i18n="section-about-title">That's me :3</h1>
+                        <p data-i18n="section-about-general-1">
                             I'm a weird person, who do a lot of stuff. Normally this stuff have to do with computers.
                             In addition I'm always sleepy.
                         </p>
-                        <p>
+                        <p data-i18n="section-about-general-2">
                             So I can get interested in things very quickly and then also learn especially fast in this subject.
                             It's like: "(OwO) whats this, that's interesting too and wow that's also interesting".
                             That's why I know so many aground the computer and programming stuff.
                             Scientific topics belong to my interests like physic, chemistry, biology and sub-areas.
                             Computer science (informatics) and electrical engineering is of course, one of them.
                         </p>
-                        <h4>Hobbies</h4>
-                        <div class="row">
+                        <h4 data-i18n="section-about-hobby-title">Hobbies</h4>
+                        <div class="row" data-i18n="section-about-hobby-text-1">
                             <div class="col-lg-6">
                                 <p>
                                     I like hiking in the forest (forests at night are the best!), swimming in a swimming pool
@@ -159,7 +162,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-about-hobby-text-2">
                                     I also draw from time to time (my drawn pictures are not so great). But I draw a lot of
                                     sketches of every possible things (like architecture and game sketches).
                                     I have a big ideas folder where many ideas are implemented not yet (like a smarthome system).
@@ -172,10 +175,10 @@
                         <img src="assets/img/ritzga-plushy.png" style="height:auto;width:100%;">
                     </div>
                 </div>
-                <h4>Skills</h4>
+                <h4 data-i18n="section-about-skills-title">Skills</h4>
                 <div class="row">
                     <div class="col-lg-6">
-                        <p>
+                        <p data-i18n="section-about-skills-text-1">
                             I love programming and started it with <a href="https://www.autoitscript.com/site/" target="_blank">AutoIt3</a>.
                             This is a easy and powerful scripting language with a nice windows GUI. After that I learned
                             HTML/css and so I came to php programming. My first homepage works with html4, css and php4.
@@ -185,7 +188,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <p class="margin-bot-half">
+                        <p class="margin-bot-half" data-i18n="section-about-skills-text-2">
                             The other part is digital art, animations and other creative stuff. I started with the microsoft
                             program "paint". After that I used <a href="https://www.getpaint.net/" target="_blank">Paint.net</a>
                             and  <a href="https://www.gimp.org/" target="_blank">Gimp</a>. I've created a lot of pictures with
@@ -200,14 +203,14 @@
         <!-- projects -->
         <section id="content-projects">
             <div class="container text-center to-top">
-                <h1>Games</h1>
+                <h1 data-i18n="section-game-title">Games</h1>
                 <div class="row">
                     <div class="col-lg-6">
                         <h2>Gestrandet</h2>
-                        <h4>About the Game</h4>
+                        <h4 data-i18n="section-game-gestrandet-about-title">About the Game</h4>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-game-gestrandet-about-text-1">
                                     It's a 2D RPG with survival style. The story is that the main character is shipwrecked
                                     and saved her/himself on an unknown island. The main quest is to build a ocean-going
                                     ship. There are 3 other islands near by the main island. So she/he can build small boats
@@ -216,7 +219,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <img src="assets/img/gestrandet1.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-game-gestrandet-about-picture-description-1">
                                     This is an in-game screenshot of the 2D survival game. (The needs are on the top left).
                                 </p>
                             </div>
@@ -224,15 +227,15 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <img src="assets/img/gestrandet2.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-game-gestrandet-about-picture-description-2">
                                     Here do you see an editor view of the game scene from the other screenshot. The software
-                                    to made this game is <a href="http://www.rpgmakerweb.com/products/programs/rpg-maker-vx-ace">RPG Maker VX Ace</a>
+                                    to made this game is <a href="http://www.rpgmakerweb.com/products/programs/rpg-maker-vx-ace" target="_blank">RPG Maker VX Ace</a>
                                     ,a nice program by the way. The advantage is that you can create a game with a full pack
                                     of game-resources.
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-game-gestrandet-about-text-2">
                                     The main island is nearby finished and the survival system is active too. So you have
                                     to eat to satisfy hunger, to drink to stay hydrated and sleep to stay healthy.
                                     In addition, you can't carry too much stuff with you. There is also a time system with
@@ -245,16 +248,16 @@
                     </div>
                     <div class="col-lg-6">
                         <h2>PlanetProspectors</h2>
-                        <h4>How it started</h4>
+                        <h4 data-i18n="section-game-planetProspectors-section-1-title">How it started</h4>
                         <div class="row">
                             <div class="col-lg-6">
                                 <img src="assets/img/pp1.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-game-planetProspectors-section-1-picture-description">
                                     This was the first sketch of my the game. It shows the planned world with water, ground and walls.
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-game-planetProspectors-section-1-text">
                                     It began with a little idea of a game like <a href="https://minecraft.net/de-de/" target="_blank">Minecraft</a>
                                     with strategic game elements. So I designed some sketches of the map and all other
                                     ideas to the game. I decided to make this game with the <a href="https://unity3d.com/de" target="_blank">Unity engine</a>.
@@ -264,16 +267,16 @@
                                 </p>
                             </div>
                         </div>
-                        <h4>What's now</h4>
+                        <h4 data-i18n="section-game-planetProspectors-section-2-title">What's now</h4>
                         <div class="row">
                             <div class="col-lg-6">
                                 <img src="assets/img/pp2.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-game-planetProspectors-section-2-picture-description">
                                     Full shaded (post processing effects) picture of an early version of the game in unity.
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <p class="margin-bot-half">
+                                <p class="margin-bot-half" data-i18n="section-game-planetProspectors-section-2-text">
                                     Now I have a Team of 3 students to work on the game in our free time. One of us is a
                                     great 3D digital artist His name is <a href="https://tohmis.deviantart.com/" target="_blank">Thomis</a>
                                     (take a look on his deviantart page). The another one is a super smart bear, who is
@@ -289,20 +292,20 @@
         <!-- moreProjects -->
         <section id="content-moreProjects">
             <div class="container text-center to-top">
-                <h1>Projects</h1>
+                <h1 data-i18n="section-otherproject-">Projects</h1>
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2>Put (project updater tool)</h2>
-                        <h4>Description</h4>
+                        <h2 data-i18n="section-otherproject-put-title">Put (project updater tool)</h2>
+                        <h4 data-i18n="section-otherproject-put-description-title">Description</h4>
                         <div class="row">
                             <div class="col-lg-6">
                                 <img src="assets/img/put1.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-otherproject-put-description-picture-description">
                                     Here do you see the client of the Put. It's really intuitive to use the client.
                                 </p>
                             </div>
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-otherproject-put-description-text">
                                     The Put (project updater tool) is like <a href="https://git-scm.com/" target="_blank">Git</a>
                                     a version control system. My Tool is way easier and simpler as git and specified for
                                     projects like games, software or tools, where updated often. So Put is a good way to
@@ -311,10 +314,10 @@
                                 </p>
                             </div>
                         </div>
-                        <h4>To Do</h4>
+                        <h4 data-i18n="section-otherproject-put-todo-title">To Do</h4>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-otherproject-put-todo-text">
                                     The current version is 0.1 (so it's a pre alpha version and it works well on windows
                                     or linux (32/64 bit)). It's planned that Put works also on android and ios. The whole
                                     interface will be written in <a href="https://electronjs.org/" target="_blank">Electron</a>.
@@ -324,7 +327,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <img src="assets/img/put2.jpg" style="height:auto;width:100%;">
-                                <p>
+                                <p data-i18n="section-otherproject-put-todo-picture-description">
                                     This is the admin tool of Put and you can see a test project. It's easy to create new
                                     projects the only thing you need is a server with FTP or SFTP and a web access.
                                 </p>
@@ -332,11 +335,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h2>Digital Art & 2D/3D-Animationen</h2>
-                        <h4>3D Animations</h4>
+                        <h2 data-i18n="section-otherproject-art-title">Digital Art & 2D/3D-Animations</h2>
+                        <h4 data-i18n="section-otherproject-art-3d-title">3D Animations</h4>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-otherproject-art-3d-text">
                                     I started working with the <a href="http://sourcefilmmaker.com/" target="_blank">Source film maker (SFM)</a> three years ago.
                                     It was very nice to make some animations but at a specific point my skills are too bad for
                                     extended animations so I stopped to make 3D animations. So by the way if you want to
@@ -346,16 +349,16 @@
                             </div>
                             <div class="col-lg-6">
                                 <iframe src="https://www.youtube.com/embed/StRSWnGJIjo" style="height:auto;width:100%;"></iframe>
-                                <p>
+                                <p data-i18n="section-otherproject-art-3d-video-description">
                                     My last animation made with the SFM. Here I tested some custom particles (snow particles)
                                     and it was at christmas time.
                                 </p>
                             </div>
                         </div>
-                        <h4>2D Animations and Intros</h4>
+                        <h4 data-i18n="section-otherproject-art-2d-title">2D Animations and Intros</h4>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p>
+                                <p data-i18n="section-otherproject-art-2d-text">
                                     One of my dreams was to make a super nice intro for my videos on Youtube. So started
                                     to make videos with the "Microsoft movie-maker". After that I used <a href="https://www.techsmith.de/camtasia.html" target="_blank">camtasia studio</a>.
                                     My animations and videos got better but I didn't stop and made the intro (see right)
@@ -368,7 +371,7 @@
                                     <source src="assets/vid/intro.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                <p class="margin-bot-half">
+                                <p class="margin-bot-half" data-i18n="section-otherproject-art-2d-video-description">
                                     This is my Intro for the youtube channel. This is my best animation I've ever made and
                                     it looks very awesome.
                                 </p>
@@ -382,7 +385,7 @@
         <section id="content-wallpaper">
             <div class="container text-center to-top">
                 <h1>Wallpaper</h1>
-                <p>
+                <p data-i18n="section-wallpaper-text">
                     Here are some of my wallpapers I made with <a href="https://www.gimp.org/" target="_blank">Gimp</a>,
                     <a href="https://www.getpaint.net/" target="_blank">Paint.net</a> and <a href="https://www.adobe.com/de/products/photoshop.html" target="_blank">Adobe Photoshop CC</a>.
                     If you want to see all wallpapers, you can take a look on <a href="https://ritzga.deviantart.com/" target="_blank">deviantart.com</a>.
@@ -395,7 +398,7 @@
                         <a title="A another Wallpaper with hexagons" href="https://ritzga.deviantart.com/art/Project-Hexagon-553287335" target="_blank">
                             <img src="https://img00.deviantart.net/421a/i/2015/224/a/7/project_hexagon_by_ritzga-d95ev8n.jpg" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-1">
                             This is one of my first wallpapers I've released on deviantart and I'm still like it.
                         </p>
                     </div>
@@ -403,7 +406,7 @@
                         <a title="A little project" href="https://ritzga.deviantart.com/art/Ice-and-Lava-572245083" target="_blank">
                             <img src="https://img00.deviantart.net/3f59/i/2015/318/6/6/ice_and_lava_by_ritzga-d9gp74r.png" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-2">
                             Here I tested some new effects and my skills on abstract pictures (It didn't turn out as well as I had imagined).
                         </p>
                     </div>
@@ -411,7 +414,7 @@
                         <a title="Looks beautiful!" href="https://ritzga.deviantart.com/art/Light-beam-584973794" target="_blank">
                             <img src="https://img00.deviantart.net/628a/i/2016/041/4/5/light_beam_by_ritzga-d9oa0o2.png" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-3">
                             After I found out how I create planets I created this awesome picture (this is also a first test of the dust particle).
                         </p>
                     </div>
@@ -421,7 +424,7 @@
                         <a title="I've created a newer and better version of my old picture" href="https://ritzga.deviantart.com/art/Spaaaaaaace-2-0-620130957" target="_blank">
                             <img src="https://img00.deviantart.net/d3e6/i/2016/189/d/4/spaaaaaaace_2_0_by_ritzga-da97k3x.png" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-4">
                             One of my best picture I've ever created. The spaceship was made by a good friend.
                         </p>
                     </div>
@@ -429,7 +432,7 @@
                         <a title="Just a random effect but I really like it" href="https://ritzga.deviantart.com/art/World-of-squares-602039816" target="_blank">
                             <img src="https://img00.deviantart.net/de03/i/2016/100/e/b/world_of_squares_by_ritzga-d9yfsw8.jpg" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-5">
                             Actually this is only a brush but it's a good effect, so I decided to make a wallpaper and yes it has become beautiful.
                             It's sad that the picture is a bit blurred and not 100% sharp, but I can't change it anymore.
                         </p>
@@ -438,7 +441,7 @@
                         <a title="Yep, I still love hexagons" href="https://ritzga.deviantart.com/art/Hexagons-590728038" target="_blank">
                             <img src="https://img00.deviantart.net/5ff1/i/2016/047/3/c/hexagons_by_ritzga-d9rpco6.png" style="height:auto;width:100%;">
                         </a>
-                        <p>
+                        <p data-i18n="section-wallpaper-picture-6">
                             Yep, one of my favorite pictures. Here I inverted the hexagons and got a interesting effect.
                             I also made some smaller hexagons and put it under the big ones to got a little 3D effect.
                         </p>
@@ -451,23 +454,23 @@
             <section class="container">
                 <div class="row to-top">
                     <article class="col-sm-4">
-                        <h3>Navigation</h3>
+                        <h3 data-i18n="section-footer-nav-title">Navigation</h3>
                         <ul class="color-white">
-                            <li><a class="jump" href="#content-home">Home</a></li>
-                            <li><a class="jump" href="#content-thatsMe">About Me</a></li>
-                            <li><a class="jump" href="#content-projects">Projects</a>
+                            <li><a class="jump" href="#content-home" data-i18n="section-nav-home">Home</a></li>
+                            <li><a class="jump" href="#content-thatsMe" data-i18n="section-nav-about">About Me</a></li>
+                            <li><a class="jump" href="#content-projects" data-i18n="section-nav-project">Projects</a>
                                 <ul>
-                                    <li><a class="jump" href="#content-projects">-Games</a></li>
-                                    <li><a class="jump" href="#content-projects">-Put</a></li>
-                                    <li><a class="jump" href="#content-moreProjects">-Animations</a></li>
-                                    <li><a class="jump" href="#content-moreProjects">-Wallpaper</a></li>
+                                    <li><a class="jump" href="#content-projects" data-i18n="section-nav-project-game">Games</a></li>
+                                    <li><a class="jump" href="#content-projects" data-i18n="section-nav-project-put">Put</a></li>
+                                    <li><a class="jump" href="#content-moreProjects" data-i18n="section-nav-project-animations">Animations</a></li>
+                                    <li><a class="jump" href="#content-moreProjects" data-i18n="section-nav-project-wallpaper">Wallpaper</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="col-sm-4"></article>
                     <article class="col-sm-4">
-                        <h3>Contact</h3>
+                        <h3 data-i18n="section-footer-contact-title">Contact</h3>
                         <ul class="color-white">
                             <li>
                                 <a href="https://github.com/Ritzga" target="_blank">
@@ -495,7 +498,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a id="open-popup" class="btn btn-info">privacy policy and imprint</a>
+                        <a id="open-popup" class="btn btn-info" data-i18n="section-footer-ppi">privacy policy and imprint</a>
                         <div id="my-popup" class="mfp-hide white-popup">
                             Inline popup
                         </div>
@@ -503,7 +506,7 @@
                 </div>
                 <article class="color-white text-center">
                     <hr class="d-none d-lg-block">
-                    <p>© 2017-2018 Ritzga, Inc. All Right Reserved.  Designed by <a class="color-white-hyperlink" href="https://Ritzga.dog">Ritzga</a></p>
+                    <p data-i18n="section-footer-copyright">© 2017-2018 Ritzga, Inc. All Right Reserved.  Designed by <a class="color-white-hyperlink" href="https://Ritzga.dog">Ritzga</a></p>
                 </article>
             </section>
         </footer>

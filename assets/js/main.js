@@ -17,6 +17,21 @@ $( document ).ready(function() {
             return window.history.pushState(null, null, this.href);
         }
     });
+    //cookie private policy
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#343a40",
+                    "text": "#62efff"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#62efff",
+                    "border": "#62efff"
+                }
+            }
+        })});
     // Slideshow
     $("#slider").responsiveSlides({
         auto: true,
