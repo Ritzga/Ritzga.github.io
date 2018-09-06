@@ -41,6 +41,10 @@ $( document ).ready(function() {
                     "background": "transparent",
                     "text": "#62efff",
                     "border": "#62efff"
+                },
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website. Look also on my privacy policy.",
+                    "dismiss": "I accept the privacy policy"
                 }
             }
         })});
